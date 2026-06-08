@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rooms & Suites — The Park Queen Hotels & Resorts</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<div id="loading-screen">
+  <div class="loader-logo">The Park Queen</div>
+  <div class="loader-subtitle">Hotels &amp; Resorts</div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+</div>
+
+<button id="scroll-top"><i class="fas fa-chevron-up"></i></button>
+
+<nav class="mobile-nav">
+  <button class="mobile-nav-close"><i class="fas fa-times"></i></button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="rooms.html">Rooms</a>
+  <a href="restaurant.html">Dining</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<header class="navbar">
+  <div class="container">
+<a href="index.html" class="navbar-brand">
+    <img src="assets/images/logo.png" alt="Park Queen Logo" class="logo-img">
+</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="rooms.html" class="active">Rooms</a>
+      <a href="restaurant.html">Dining</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-book-btn"><span>Book Now</span></a>
+    </nav>
+    <button class="nav-hamburger"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero parallax-section">
+  <div class="parallax-bg" style="background-image:url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1920&q=85');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb-luxury">
+      <a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Rooms &amp; Suites</span>
+    </div>
+    <h1 class="page-hero-title">Rooms &amp; <em style="font-style:italic;color:var(--luxury-gold);">Suites</em></h1>
+  </div>
+</section>
+
+<!-- Intro -->
+<section style="padding:80px 0 40px;background:var(--ivory);text-align:center;">
+  <div class="container-narrow" data-aos="fade-up">
+    <span class="section-eyebrow">Curated Sanctuaries</span>
+    <h2 class="section-title">Every Room, A <em style="font-style:italic;color:var(--luxury-gold);">Masterpiece</em></h2>
+    <div class="gold-divider"><span></span><i class="fas fa-bed"></i><span></span></div>
+    <p class="section-subtitle" style="text-align:center;margin:16px auto 0;">Each of our 248 accommodations is individually curated with bespoke furnishings, custom art, and thoughtful amenities — ensuring your stay is unlike any other.</p>
+  </div>
+</section>
+
+<!-- Rooms Page Content -->
+<section class="rooms-page">
+  <div class="container">
+
+    <!-- Filter -->
+    <div class="rooms-filter" data-aos="fade-up">
+      <button class="filter-btn active" data-filter="all">All Rooms</button>
+      <button class="filter-btn" data-filter="deluxe">Deluxe</button>
+      <button class="filter-btn" data-filter="suite">Executive</button>
+      <button class="filter-btn" data-filter="villa">Villa</button>
+      <button class="filter-btn" data-filter="presidential">Presidential</button>
+    </div>
+
+    <!-- Deluxe Room -->
+    <div class="room-detail-card" data-category="deluxe">
+      <div class="room-detail-img-wrap">
+        <img class="room-detail-img" src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=900&q=80" alt="Deluxe Room" />
+        <div class="room-badge">Most Popular</div>
+      </div>
+      <div class="room-detail-info">
+        <div class="room-detail-name">Deluxe Room</div>
+        <div class="room-detail-size"><i class="fas fa-vector-square"></i> 42 sqm &nbsp;|&nbsp; <i class="fas fa-mountain"></i> Mountain or Garden View</div>
+        <p class="room-detail-desc">A sanctuary of refined elegance, our Deluxe Room offers sweeping views of the Himalayan foothills through floor-to-ceiling windows. Adorned with hand-woven textiles, custom artwork, and a king-sized bed dressed in 1000-thread-count Egyptian cotton, it is a haven of serene comfort.</p>
+        <div class="room-detail-amenities">
+          <div class="room-detail-amenity"><i class="fas fa-bed"></i> King or Twin Bed</div>
+          <div class="room-detail-amenity"><i class="fas fa-bath"></i> Marble Ensuite</div>
+          <div class="room-detail-amenity"><i class="fas fa-wifi"></i> High-Speed WiFi</div>
+          <div class="room-detail-amenity"><i class="fas fa-tv"></i> 55" Smart TV</div>
+          <div class="room-detail-amenity"><i class="fas fa-snowflake"></i> Climate Control</div>
+          <div class="room-detail-amenity"><i class="fas fa-coffee"></i> Nespresso Machine</div>
+          <div class="room-detail-amenity"><i class="fas fa-concierge-bell"></i> 24hr Room Service</div>
+          <div class="room-detail-amenity"><i class="fas fa-lock"></i> In-Room Safe</div>
+        </div>
+        <div class="room-detail-pricing">
+          <div class="room-price-amount">₹12,500</div>
+          <div class="room-price-period">per night <br><small style="font-size:0.68rem;color:var(--text-light);">incl. breakfast for two</small></div>
+        </div>
+        <a href="contact.html" class="btn-gold"><span>Book This Room</span><i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <!-- Executive Suite -->
+    <div class="room-detail-card" data-category="suite">
+      <div class="room-detail-img-wrap">
+        <img class="room-detail-img" src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=900&q=80" alt="Executive Suite" />
+        <div class="room-badge">Business Luxury</div>
+      </div>
+      <div class="room-detail-info">
+        <div class="room-detail-name">Executive Suite</div>
+        <div class="room-detail-size"><i class="fas fa-vector-square"></i> 78 sqm &nbsp;|&nbsp; <i class="fas fa-mountain"></i> Panoramic Hill View</div>
+        <p class="room-detail-desc">Designed for the discerning business traveller who refuses to compromise on luxury, the Executive Suite features a separate living area, private dining space, and a dedicated work zone. The wraparound terrace offers uninterrupted views of the snow-capped peaks.</p>
+        <div class="room-detail-amenities">
+          <div class="room-detail-amenity"><i class="fas fa-bed"></i> King Bed</div>
+          <div class="room-detail-amenity"><i class="fas fa-couch"></i> Living Area</div>
+          <div class="room-detail-amenity"><i class="fas fa-briefcase"></i> Work Station</div>
+          <div class="room-detail-amenity"><i class="fas fa-glass-martini"></i> Stocked Minibar</div>
+          <div class="room-detail-amenity"><i class="fas fa-user-tie"></i> Butler Service</div>
+          <div class="room-detail-amenity"><i class="fas fa-door-open"></i> Private Terrace</div>
+          <div class="room-detail-amenity"><i class="fas fa-bath"></i> Soaking Tub</div>
+          <div class="room-detail-amenity"><i class="fas fa-shoe-prints"></i> Turndown Service</div>
+        </div>
+        <div class="room-detail-pricing">
+          <div class="room-price-amount">₹18,000</div>
+          <div class="room-price-period">per night <br><small style="font-size:0.68rem;color:var(--text-light);">incl. breakfast &amp; evening cocktails</small></div>
+        </div>
+        <a href="contact.html" class="btn-gold"><span>Book This Suite</span><i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <!-- Villa Suite -->
+    <div class="room-detail-card" data-category="villa">
+      <div class="room-detail-img-wrap">
+        <img class="room-detail-img" src="https://images.unsplash.com/photo-1612965607446-25e1332775ae?w=900&q=80" alt="Villa Suite" />
+        <div class="room-badge">Private Retreat</div>
+      </div>
+      <div class="room-detail-info">
+        <div class="room-detail-name">Villa Suite</div>
+        <div class="room-detail-size"><i class="fas fa-vector-square"></i> 180 sqm &nbsp;|&nbsp; <i class="fas fa-water"></i> Private Garden &amp; Pool</div>
+        <p class="room-detail-desc">A private world unto itself — the Villa Suite is our most intimate offering. Set within its own landscaped garden with a heated plunge pool, this standalone villa combines the freedom of a private residence with the pampering of five-star hospitality. A personal chef is available upon request.</p>
+        <div class="room-detail-amenities">
+          <div class="room-detail-amenity"><i class="fas fa-bed"></i> King Bed + Living</div>
+          <div class="room-detail-amenity"><i class="fas fa-water"></i> Heated Plunge Pool</div>
+          <div class="room-detail-amenity"><i class="fas fa-leaf"></i> Private Garden</div>
+          <div class="room-detail-amenity"><i class="fas fa-utensils"></i> Private Chef (on request)</div>
+          <div class="room-detail-amenity"><i class="fas fa-user-tie"></i> Dedicated Butler</div>
+          <div class="room-detail-amenity"><i class="fas fa-car"></i> Complimentary Transfer</div>
+          <div class="room-detail-amenity"><i class="fas fa-spa"></i> In-villa Spa Treatment</div>
+          <div class="room-detail-amenity"><i class="fas fa-door-closed"></i> Complete Privacy</div>
+        </div>
+        <div class="room-detail-pricing">
+          <div class="room-price-amount">₹28,000</div>
+          <div class="room-price-period">per night <br><small style="font-size:0.68rem;color:var(--text-light);">full board available</small></div>
+        </div>
+        <a href="contact.html" class="btn-gold"><span>Book This Villa</span><i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <!-- Presidential Suite -->
+    <div class="room-detail-card" data-category="presidential">
+      <div class="room-detail-img-wrap">
+        <img class="room-detail-img" src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80" alt="Presidential Suite" />
+        <div class="room-badge" style="background:var(--navy);color:var(--luxury-gold);">Crown Jewel</div>
+      </div>
+      <div class="room-detail-info">
+        <div class="room-detail-name">Presidential Suite</div>
+        <div class="room-detail-size"><i class="fas fa-vector-square"></i> 380 sqm &nbsp;|&nbsp; <i class="fas fa-mountain"></i> 360° Himalayan Panorama</div>
+        <p class="room-detail-desc">The crown jewel of The Park Queen — a three-bedroom suite spanning 380 square metres on the entire top floor. Featuring a private pool, home cinema, private dining room for twelve, a fully equipped kitchen, a dedicated butler team, and breathtaking 360-degree views of the Himalayas. An experience beyond compare.</p>
+        <div class="room-detail-amenities">
+          <div class="room-detail-amenity"><i class="fas fa-bed"></i> 3 King Bedrooms</div>
+          <div class="room-detail-amenity"><i class="fas fa-swimming-pool"></i> Private Rooftop Pool</div>
+          <div class="room-detail-amenity"><i class="fas fa-film"></i> Home Cinema</div>
+          <div class="room-detail-amenity"><i class="fas fa-utensils"></i> Private Dining Room</div>
+          <div class="room-detail-amenity"><i class="fas fa-users"></i> Full Butler Team</div>
+          <div class="room-detail-amenity"><i class="fas fa-helicopter"></i> Helipad Transfer</div>
+          <div class="room-detail-amenity"><i class="fas fa-spa"></i> Private Spa Room</div>
+          <div class="room-detail-amenity"><i class="fas fa-star"></i> VIP Arrival Experience</div>
+        </div>
+        <div class="room-detail-pricing">
+          <div class="room-price-amount">₹45,000</div>
+          <div class="room-price-period">per night <br><small style="font-size:0.68rem;color:var(--text-light);">all-inclusive on request</small></div>
+        </div>
+        <a href="contact.html" class="btn-gold"><span>Enquire Now</span><i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Inclusions Banner -->
+<section style="padding:80px 0;background:var(--navy);">
+  <div class="container" data-aos="fade-up">
+    <div style="text-align:center;margin-bottom:50px;">
+      <span class="section-eyebrow">Every Stay Includes</span>
+      <h2 class="section-title light">The Park Queen <em style="font-style:italic;color:var(--luxury-gold);">Promise</em></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center;">
+      <div style="padding:32px 20px;border:1px solid rgba(212,175,55,0.15);">
+        <i class="fas fa-utensils" style="font-size:2rem;color:var(--luxury-gold);margin-bottom:16px;"></i>
+        <div style="font-family:var(--font-heading);color:var(--ivory);font-size:1rem;margin-bottom:8px;">Complimentary Breakfast</div>
+        <div style="font-size:0.78rem;color:rgba(248,246,241,0.5);">Artisan spread for two daily</div>
+      </div>
+      <div style="padding:32px 20px;border:1px solid rgba(212,175,55,0.15);">
+        <i class="fas fa-car" style="font-size:2rem;color:var(--luxury-gold);margin-bottom:16px;"></i>
+        <div style="font-family:var(--font-heading);color:var(--ivory);font-size:1rem;margin-bottom:8px;">Airport Transfers</div>
+        <div style="font-size:0.78rem;color:rgba(248,246,241,0.5);">Luxury vehicle both ways</div>
+      </div>
+      <div style="padding:32px 20px;border:1px solid rgba(212,175,55,0.15);">
+        <i class="fas fa-spa" style="font-size:2rem;color:var(--luxury-gold);margin-bottom:16px;"></i>
+        <div style="font-family:var(--font-heading);color:var(--ivory);font-size:1rem;margin-bottom:8px;">Spa Access</div>
+        <div style="font-size:0.78rem;color:rgba(248,246,241,0.5);">Complimentary pool &amp; steam</div>
+      </div>
+      <div style="padding:32px 20px;border:1px solid rgba(212,175,55,0.15);">
+        <i class="fas fa-concierge-bell" style="font-size:2rem;color:var(--luxury-gold);margin-bottom:16px;"></i>
+        <div style="font-family:var(--font-heading);color:var(--ivory);font-size:1rem;margin-bottom:8px;">24hr Concierge</div>
+        <div style="font-size:0.78rem;color:rgba(248,246,241,0.5);">Personal butler on call</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container-narrow" data-aos="fade-up">
+    <h2 class="cta-title">Ready to <em style="font-style:italic;color:var(--luxury-gold);">Reserve</em> Your Suite?</h2>
+    <p class="cta-subtitle">Contact our reservations team for bespoke packages and exclusive offers.</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn-gold"><span>Make a Reservation</span><i class="fas fa-calendar-alt"></i></a>
+    </div>
+    <div class="cta-phone"><i class="fas fa-phone"></i> Reservations: <a href="tel:+911772660000">+91 177-266-0000</a></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">The Park Queen</div>
+        <div class="footer-brand-tag">Hotels &amp; Resorts · Est. 1999</div>
+        <p class="footer-about">Shimla's most distinguished address — where every stay is a curated journey through luxury and heritage.</p>
+        <div class="footer-socials">
+          <a class="footer-social" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="footer-social" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="footer-social" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="footer-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+          <li><a href="restaurant.html">Dining</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="#">Spa &amp; Wellness</a></li>
+          <li><a href="#">Weddings &amp; Events</a></li>
+          <li><a href="#">Corporate Packages</a></li>
+          <li><a href="#">Airport Transfers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Contact Us</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>The Ridge, Shimla, HP 171001</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+91 177-266-0000</span></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>reservations@parkqueenhotels.com</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2025 <span>The Park Queen Hotels &amp; Resorts</span>. All Rights Reserved.</div>
+      <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
