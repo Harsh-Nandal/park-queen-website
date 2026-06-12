@@ -7,7 +7,7 @@
 /* ─── CSS Variables ─────────────────────────────────────────── */
 :root {
   --royal-blue: #0A2E73;
-  --luxury-gold: #D4AF37;
+  --luxury-gold: #fad868;
   --gold-light: #E8CB6A;
   --gold-dark: #A88B20;
   --navy: #081F4D;
@@ -146,9 +146,10 @@ ul { list-style: none; }
   left: 0;
   right: 0;
   z-index: 9000;
-  padding: 24px 0;
-  transition: var(--transition);
-  background: transparent;
+  padding: 14px 0;
+  background: rgba(8,31,77,0.97);
+  /* transition: var(--transition);
+  background: transparent; */
 }
 
 .navbar.scrolled {
