@@ -1,0 +1,913 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      The Park Queen Hotels & Resorts — Where Royalty Meets Refinement
+    </title>
+    <meta
+      name="description"
+      content="Experience unparalleled luxury at The Park Queen Hotels & Resorts. Premium rooms, fine dining, and world-class amenities."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loader-logo">The Park Queen</div>
+      <div class="loader-subtitle">Hotels &amp; Resorts</div>
+      <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button id="scroll-top" aria-label="Scroll to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+      <button class="lightbox-close"><i class="fas fa-times"></i></button>
+      <img id="lightbox-img" src="" alt="Gallery" />
+    </div>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+      <button class="mobile-nav-close"><i class="fas fa-times"></i></button>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="restaurant.html">Dining</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Navigation -->
+    <header class="navbar" role="banner">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img
+            src="assets/images/logo.png"
+            alt="Park Queen Logo"
+            class="logo-img"
+          />
+        </a>
+        <nav class="nav-links" role="navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="restaurant.html">Dining</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html" class="nav-book-btn"><span>Book Now</span></a>
+        </nav>
+        <button class="nav-hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ═══ HERO ═══════════════════════════════════════════════════ -->
+    <section class="hero" id="home">
+      <!-- Slide 1 -->
+      <div class="hero-slide hero-slide-1" style="opacity: 1">
+        <div
+          class="hero-bg-img"
+          style="
+            background-image: url('assets/images/home/12121.jpg.jpeg');
+          "
+        ></div>
+      </div>
+      <!-- Slide 2 -->
+      <!-- <div class="hero-slide hero-slide-2" style="opacity: 0">
+        <div
+          class="hero-bg-img"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1920&q=85&quot;);
+          "
+        ></div>
+      </div> -->
+      <!-- Slide 3 -->
+      <!-- <div class="hero-slide hero-slide-3" style="opacity: 0">
+        <div
+          class="hero-bg-img"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1920&q=85&quot;);
+          "
+        ></div>
+      </div> -->
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-eyebrow">Rohtak's Finest Luxury Hotel</div>
+        <h1 class="hero-title">Where <em>Royalty</em><br />Meets Refinement</h1>
+        <p class="hero-desc">
+          An extraordinary retreat nestled in the heart of Rohtak, offering
+          unparalleled elegance, world-class dining, and timeless hospitality
+          that defines true luxury.
+        </p>
+        <div class="hero-actions">
+          <a href="rooms.html" class="btn-gold"
+            ><span>Explore Rooms</span><i class="fas fa-arrow-right"></i
+          ></a>
+          <a href="contact.html" class="btn-outline"
+            ><span>Reserve Now</span></a
+          >
+        </div>
+      </div>
+
+      <!-- Dots -->
+      <div class="hero-dots">
+        <button class="hero-dot active" data-slide="0"></button>
+        <button class="hero-dot" data-slide="1"></button>
+        <button class="hero-dot" data-slide="2"></button>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="hero-scroll-indicator">
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ═══ BOOKING BAR ══════════════════════════════════════════ -->
+    <section class="booking-bar">
+      <div class="booking-bar-inner">
+        <div class="booking-field">
+          <label>Check In</label>
+          <input type="date" id="checkin" />
+        </div>
+        <div class="booking-field">
+          <label>Check Out</label>
+          <input type="date" id="checkout" />
+        </div>
+        <div class="booking-field">
+          <label>Room Type</label>
+          <select>
+            <option>Deluxe Room</option>
+            <option>Executive Suite</option>
+            <option>Villa Suite</option>
+            <option>Presidential Suite</option>
+          </select>
+        </div>
+        <button class="booking-submit" onclick="location.href = 'contact.html'">
+          Check Availability
+        </button>
+      </div>
+    </section>
+
+    <!-- ═══ ABOUT PREVIEW ════════════════════════════════════════ -->
+    <section class="about-preview" id="about">
+      <div class="container">
+        <div class="about-preview-grid">
+          <div class="about-img-stack" data-aos="fade-right">
+            <img
+              class="about-img-main"
+              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80"
+              alt="Park Queen Exterior"
+            />
+            <img
+              class="about-img-secondary"
+              src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80"
+              alt="Luxury Lobby"
+            />
+            <div class="about-badge">
+              <span class="about-badge-num">25+</span>
+              <span class="about-badge-text">Years of<br />Excellence</span>
+            </div>
+          </div>
+          <div class="about-content" data-aos="fade-left" data-aos-delay="150">
+            <span class="section-eyebrow">Our Legacy</span>
+            <h2 class="section-title">
+              A Heritage of <br />Unmatched
+              <em style="font-style: italic; color: var(--luxury-gold)"
+                >Luxury</em
+              >
+            </h2>
+            <div class="gold-divider">
+              <span></span><i class="fas fa-crown"></i><span></span>
+            </div>
+            <p class="section-subtitle">
+              Since 1999, The Park Queen has stood as Rohtak's most
+              distinguished address — a place where colonial grandeur meets
+              contemporary sophistication. Every corner tells a story of
+              craftsmanship, care, and an unwavering commitment to excellence.
+            </p>
+            <p
+              style="
+                font-size: 0.88rem;
+                color: var(--text-muted);
+                line-height: 1.8;
+                margin-top: 16px;
+              "
+            >
+              From our hand-curated art collections to our bespoke butler
+              service, every detail has been conceived to create moments that
+              endure long after your stay.
+            </p>
+            <div class="about-stats">
+              <div>
+                <div class="about-stat-num">
+                  <span class="counter" data-target="248" data-suffix="+"
+                    >0</span
+                  >
+                </div>
+                <div class="about-stat-label">Luxury Rooms</div>
+              </div>
+              <div>
+                <div class="about-stat-num">
+                  <span class="counter" data-target="18" data-suffix="">0</span>
+                </div>
+                <div class="about-stat-label">Dining Venues</div>
+              </div>
+              <div>
+                <div class="about-stat-num">
+                  <span class="counter" data-target="99" data-suffix="%"
+                    >0</span
+                  >
+                </div>
+                <div class="about-stat-label">Guest Satisfaction</div>
+              </div>
+            </div>
+            <div style="margin-top: 40px">
+              <a href="about.html" class="btn-gold"
+                ><span>Our Story</span><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FEATURED ROOMS ════════════════════════════════════════ -->
+    <section class="rooms-section" id="rooms">
+      <div class="container">
+        <div class="rooms-header">
+          <span class="section-eyebrow">Curated Accommodations</span>
+          <h2 class="section-title light">
+            Our
+            <em style="font-style: italic; color: var(--luxury-gold)"
+              >Signature</em
+            >
+            Suites
+          </h2>
+          <div class="gold-divider">
+            <span></span><i class="fas fa-star"></i><span></span>
+          </div>
+          <p class="section-subtitle light" style="margin: 16px auto 0">
+            Each room is a sanctuary of refined comfort, where bespoke
+            furnishings meet breathtaking views of the Himalayan foothills.
+          </p>
+        </div>
+
+        <div class="rooms-grid" data-aos="fade-up">
+          <!-- Large Card -->
+          <div class="room-card">
+            <img
+              class="room-img"
+              src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80"
+              alt="Presidential Suite"
+            />
+            <div class="room-card-overlay">
+              <span class="room-tag">Crown Jewel</span>
+              <h3 class="room-name">Presidential Suite</h3>
+              <div class="room-price">
+                From <strong>₹45,000</strong> / night
+              </div>
+              <div class="room-hover-info">
+                <div class="room-amenities-mini">
+                  <span><i class="fas fa-bed"></i> King Bed</span>
+                  <span><i class="fas fa-bath"></i> Private Pool</span>
+                  <span><i class="fas fa-mountain"></i> Hill View</span>
+                  <span><i class="fas fa-concierge-bell"></i> Butler</span>
+                </div>
+                <a
+                  href="rooms.html"
+                  class="btn-gold"
+                  style="font-size: 0.62rem; padding: 12px 24px"
+                  ><span>View Details</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Smaller Cards -->
+          <div class="room-card">
+            <img
+              class="room-img"
+              src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=700&q=80"
+              alt="Deluxe Room"
+            />
+            <div class="room-card-overlay">
+              <span class="room-tag">Most Popular</span>
+              <h3 class="room-name">Deluxe Room</h3>
+              <div class="room-price">
+                From <strong>₹12,500</strong> / night
+              </div>
+              <div class="room-hover-info">
+                <div class="room-amenities-mini">
+                  <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                  <span><i class="fas fa-tv"></i> Smart TV</span>
+                </div>
+                <a
+                  href="rooms.html"
+                  class="btn-gold"
+                  style="font-size: 0.62rem; padding: 12px 24px"
+                  ><span>View Details</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="room-card">
+            <img
+              class="room-img"
+              src="https://images.unsplash.com/photo-1612965607446-25e1332775ae?w=700&q=80"
+              alt="Villa Suite"
+            />
+            <div class="room-card-overlay">
+              <span class="room-tag">Private Retreat</span>
+              <h3 class="room-name">Villa Suite</h3>
+              <div class="room-price">
+                From <strong>₹28,000</strong> / night
+              </div>
+              <div class="room-hover-info">
+                <div class="room-amenities-mini">
+                  <span><i class="fas fa-water"></i> Plunge Pool</span>
+                  <span><i class="fas fa-leaf"></i> Garden</span>
+                </div>
+                <a
+                  href="rooms.html"
+                  class="btn-gold"
+                  style="font-size: 0.62rem; padding: 12px 24px"
+                  ><span>View Details</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="room-card">
+            <img
+              class="room-img"
+              src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=700&q=80"
+              alt="Executive Suite"
+            />
+            <div class="room-card-overlay">
+              <span class="room-tag">Business Luxury</span>
+              <h3 class="room-name">Executive Suite</h3>
+              <div class="room-price">
+                From <strong>₹18,000</strong> / night
+              </div>
+              <div class="room-hover-info">
+                <div class="room-amenities-mini">
+                  <span><i class="fas fa-briefcase"></i> Work Desk</span>
+                  <span><i class="fas fa-glass-martini"></i> Minibar</span>
+                </div>
+                <a
+                  href="rooms.html"
+                  class="btn-gold"
+                  style="font-size: 0.62rem; padding: 12px 24px"
+                  ><span>View Details</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px">
+          <a href="rooms.html" class="btn-outline"
+            ><span>View All Accommodations</span
+            ><i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ RESTAURANT SHOWCASE ══════════════════════════════════ -->
+    <section class="restaurant-section" id="dining">
+      <div class="container-narrow">
+        <div style="text-align: center" data-aos="fade-up">
+          <span class="section-eyebrow">Gastronomic Excellence</span>
+          <h2 class="section-title">
+            A Journey of
+            <em style="font-style: italic; color: var(--luxury-gold)"
+              >Flavours</em
+            >
+          </h2>
+          <div class="gold-divider">
+            <span></span><i class="fas fa-utensils"></i><span></span>
+          </div>
+        </div>
+      </div>
+      <div class="restaurant-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="restaurant-visual">
+          <img
+            class="restaurant-img"
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80"
+            alt="Fine Dining"
+          />
+          <div class="restaurant-visual-overlay"></div>
+        </div>
+        <div class="restaurant-info">
+          <div class="restaurant-tabs">
+            <button class="rest-tab active" data-tab="fine">Fine Dining</button>
+            <button class="rest-tab" data-tab="rooftop">Rooftop</button>
+            <button class="rest-tab" data-tab="cafe">Café Lounge</button>
+          </div>
+          <div id="tab-fine" class="rest-tab-content active">
+            <h3 class="rest-tab-title">The Maharani Restaurant</h3>
+            <p class="rest-tab-desc">
+              An award-winning culinary theatre where our Michelin-inspired
+              chefs craft masterpieces from the finest local and imported
+              ingredients. Every dish is a narrative of India's rich culinary
+              heritage, elevated to an art form.
+            </p>
+            <div class="rest-detail">
+              <i class="fas fa-clock"></i> Open Daily: 12:00 PM – 11:00 PM
+            </div>
+            <div class="rest-detail">
+              <i class="fas fa-utensils"></i> Cuisine: Indian & Continental
+            </div>
+            <div class="rest-detail">
+              <i class="fas fa-star"></i> Recommended: Jacket Preferred
+            </div>
+            <div style="margin-top: 36px">
+              <a href="restaurant.html" class="btn-gold"
+                ><span>Explore Menu</span><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div id="tab-rooftop" class="rest-tab-content">
+            <h3 class="rest-tab-title">Skyline Terrace</h3>
+            <p class="rest-tab-desc">
+              Dine under the stars with panoramic views of the Himalayan
+              skyline. Our rooftop terrace offers an unforgettable experience of
+              fresh mountain air, signature cocktails, and artisanal cuisine.
+            </p>
+            <div class="rest-detail">
+              <i class="fas fa-clock"></i> Open Daily: 5:00 PM – 11:00 PM
+            </div>
+            <div class="rest-detail">
+              <i class="fas fa-cocktail"></i> Specialty: Cocktails & Grills
+            </div>
+            <div class="rest-detail">
+              <i class="fas fa-mountain"></i> View: Himalayan Panorama
+            </div>
+            <div style="margin-top: 36px">
+              <a href="restaurant.html" class="btn-gold"
+                ><span>Make Reservation</span><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div id="tab-cafe" class="rest-tab-content">
+            <h3 class="rest-tab-title">The Queen's Parlour</h3>
+            <p class="rest-tab-desc">
+              A refined sanctuary for leisurely breakfasts, afternoon teas, and
+              light bites. Savour artisanal pastries, rare teas from the gardens
+              of Darjeeling, and freshly ground single-origin coffees.
+            </p>
+            <div class="rest-detail">
+              <i class="fas fa-clock"></i> Open Daily: 7:00 AM – 9:00 PM
+            </div>
+            <div class="rest-detail">
+              <i class="fas fa-coffee"></i> Specialty: Artisan Coffee & Tea
+            </div>
+            <div class="rest-detail">
+              <i class="fas fa-bread-slice"></i> Fresh Pastries All Day
+            </div>
+            <div style="margin-top: 36px">
+              <a href="restaurant.html" class="btn-gold"
+                ><span>View Menu</span><i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ AMENITIES ════════════════════════════════════════════ -->
+    <section class="amenities-section">
+      <div class="container" style="text-align: center" data-aos="fade-up">
+        <span class="section-eyebrow">World-Class Facilities</span>
+        <h2 class="section-title">
+          Curated
+          <em style="font-style: italic; color: var(--luxury-gold)"
+            >Experiences</em
+          >
+        </h2>
+        <div class="gold-divider">
+          <span></span><i class="fas fa-gem"></i><span></span>
+        </div>
+        <p
+          class="section-subtitle"
+          style="margin: 16px auto 0; text-align: center"
+        >
+          Every amenity is designed with the single purpose of ensuring your
+          stay transcends the ordinary.
+        </p>
+      </div>
+      <div
+        class="amenities-grid"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        style="margin-top: 70px"
+      >
+        <div class="amenity-card">
+          <img
+            class="amenity-img"
+            src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=80"
+            alt="Spa"
+          />
+          <div class="amenity-overlay">
+            <div class="amenity-icon"><i class="fas fa-spa"></i></div>
+            <h3 class="amenity-name">Royal Spa</h3>
+            <p class="amenity-desc">
+              Ancient Ayurvedic therapies blended with contemporary wellness
+              rituals.
+            </p>
+          </div>
+        </div>
+        <div class="amenity-card">
+          <img
+            class="amenity-img"
+            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80"
+            alt="Pool"
+          />
+          <div class="amenity-overlay">
+            <div class="amenity-icon"><i class="fas fa-swimming-pool"></i></div>
+            <h3 class="amenity-name">Infinity Pool</h3>
+            <p class="amenity-desc">
+              A temperature-controlled pool with breathtaking Himalayan vistas.
+            </p>
+          </div>
+        </div>
+        <div class="amenity-card">
+          <img
+            class="amenity-img"
+            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80"
+            alt="Fitness"
+          />
+          <div class="amenity-overlay">
+            <div class="amenity-icon"><i class="fas fa-dumbbell"></i></div>
+            <h3 class="amenity-name">Fitness Studio</h3>
+            <p class="amenity-desc">
+              State-of-the-art equipment with personal trainers available 24/7.
+            </p>
+          </div>
+        </div>
+        <div class="amenity-card">
+          <img
+            class="amenity-img"
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80"
+            alt="Events"
+          />
+          <div class="amenity-overlay">
+            <div class="amenity-icon"><i class="fas fa-glass-cheers"></i></div>
+            <h3 class="amenity-name">Grand Ballroom</h3>
+            <p class="amenity-desc">
+              Majestic event spaces for weddings, galas, and corporate
+              celebrations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TESTIMONIALS ════════════════════════════════════════ -->
+    <section class="testimonials-section">
+      <div class="container" data-aos="fade-up">
+        <div style="text-align: center">
+          <span class="section-eyebrow">Guest Stories</span>
+          <h2 class="section-title">
+            Voices of
+            <em style="font-style: italic; color: var(--luxury-gold)"
+              >Excellence</em
+            >
+          </h2>
+          <div class="gold-divider">
+            <span></span><i class="fas fa-quote-right"></i><span></span>
+          </div>
+        </div>
+        <div class="testimonials-swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "The Park Queen redefined luxury for us. Every detail, from
+                  the hand-embroidered linens to the personalised dining
+                  experience, spoke of rare and authentic elegance. A memory we
+                  will cherish forever."
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    class="testimonial-avatar"
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80"
+                    alt="Guest"
+                  />
+                  <div>
+                    <div class="testimonial-name">Priya Sharma</div>
+                    <div class="testimonial-origin">Mumbai, India</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Our honeymoon at The Park Queen was nothing short of a fairy
+                  tale. The Presidential Suite with its private pool and the
+                  butler service made us feel like royalty. Extraordinary in
+                  every sense."
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    class="testimonial-avatar"
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
+                    alt="Guest"
+                  />
+                  <div>
+                    <div class="testimonial-name">Arjun & Meera Kapoor</div>
+                    <div class="testimonial-origin">Delhi, India</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "The Maharani Restaurant alone is worth a trip to Rohtak. The
+                  flavours were transcendent — a perfect balance of tradition
+                  and innovation. The sommelier's wine pairings were
+                  impeccable."
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    class="testimonial-avatar"
+                    src="https://images.unsplash.com/photo-1557862921-37829c790f19?w=100&q=80"
+                    alt="Guest"
+                  />
+                  <div>
+                    <div class="testimonial-name">James & Claire Whitmore</div>
+                    <div class="testimonial-origin">London, United Kingdom</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-pagination"
+            style="margin-top: 40px; position: relative"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ GALLERY PREVIEW ══════════════════════════════════════ -->
+    <section class="gallery-preview">
+      <div class="container" data-aos="fade-up">
+        <div style="text-align: center">
+          <span class="section-eyebrow">Visual Elegance</span>
+          <h2 class="section-title light">
+            A Glimpse of
+            <em style="font-style: italic; color: var(--luxury-gold)"
+              >Paradise</em
+            >
+          </h2>
+          <div class="gold-divider">
+            <span></span><i class="fas fa-camera"></i><span></span>
+          </div>
+        </div>
+        <div class="gallery-grid">
+          <div
+            class="gallery-item"
+            data-lightbox="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=90"
+          >
+            <img
+              class="gallery-img"
+              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&q=80"
+              alt="Hotel"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-zoom-icon">
+                <i class="fas fa-expand-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            data-lightbox="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=90"
+          >
+            <img
+              class="gallery-img"
+              src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80"
+              alt="Suite"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-zoom-icon">
+                <i class="fas fa-expand-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            data-lightbox="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=90"
+          >
+            <img
+              class="gallery-img"
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80"
+              alt="Restaurant"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-zoom-icon">
+                <i class="fas fa-expand-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            data-lightbox="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1200&q=90"
+          >
+            <img
+              class="gallery-img"
+              src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=80"
+              alt="Spa"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-zoom-icon">
+                <i class="fas fa-expand-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            data-lightbox="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=90"
+          >
+            <img
+              class="gallery-img"
+              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80"
+              alt="Pool"
+            />
+            <div class="gallery-item-overlay">
+              <div class="gallery-zoom-icon">
+                <i class="fas fa-expand-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 50px">
+          <a href="gallery.html" class="btn-outline"
+            ><span>View Full Gallery</span><i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CTA ══════════════════════════════════════════════════ -->
+    <section class="cta-section">
+      <div class="container-narrow" data-aos="fade-up">
+        <h2 class="cta-title">
+          Begin Your<br /><em
+            style="font-style: italic; color: var(--luxury-gold)"
+            >Royal</em
+          >
+          Journey
+        </h2>
+        <p class="cta-subtitle">
+          Reserve your stay and let us craft an experience tailored to your
+          every desire.
+        </p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn-gold"
+            ><span>Book Your Stay</span><i class="fas fa-calendar-alt"></i
+          ></a>
+          <a href="rooms.html" class="btn-white"><span>Explore Suites</span></a>
+        </div>
+        <div class="cta-phone">
+          <i class="fas fa-phone"></i> Call our concierge:
+          <a href="tel:+911772660000">+91 177-266-0000</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══════════════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand-name">The Park Queen</div>
+            <div class="footer-brand-tag">Hotels &amp; Resorts · Est. 1999</div>
+            <p class="footer-about">
+              Rohtak's most distinguished address — where every stay is a
+              curated journey through luxury, heritage, and unparalleled
+              Himalayan beauty.
+            </p>
+            <div class="footer-socials">
+              <a class="footer-social" href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a class="footer-social" href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="footer-social" href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="footer-social" href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="footer-col-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="rooms.html">Rooms & Suites</a></li>
+              <li><a href="restaurant.html">Dining</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-col-title">Our Services</h4>
+            <ul class="footer-links">
+              <li><a href="#">Spa & Wellness</a></li>
+              <li><a href="#">Weddings & Events</a></li>
+              <li><a href="#">Corporate Packages</a></li>
+              <li><a href="#">Airport Transfers</a></li>
+              <li><a href="#">Concierge Service</a></li>
+              <li><a href="#">Loyalty Programme</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-col-title">Contact Us</h4>
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>
+                The Parkqueen Hotels & Resort's Opposite Devi Lal Park, Delhi
+                Bypass Rohtak, NCR Haryana -124001 (INDIA)</span
+              >
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+91 177-266-0000<br />+91 177-266-0001</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <span
+                >reservations@parkqueenhotels.com<br />concierge@parkqueenhotels.com</span
+              >
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-clock"></i>
+              <span>Concierge: 24 Hours, 7 Days</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-copy">
+            &copy; 2025 <span>The Park Queen Hotels & Resorts</span>. All Rights
+            Reserved.
+          </div>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
